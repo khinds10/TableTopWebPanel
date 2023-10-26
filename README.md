@@ -1,7 +1,7 @@
 # Table Top Web Panel
 Create a table top web panel with a rapsberry pi 0
 
-![Finished](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/Construction/DHT22.png)
+![Finished](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/Construction/XXX.png)
 
 #### Flashing RaspberriPi Hard Disk / Install Required Software (Using Ubuntu Linux)
 
@@ -146,7 +146,7 @@ Add the following lines to have your raspberrypi automatically connect to your h
 
 **5 Inch Touchscreen for Raspberry Pi**
 
-![DHT22](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/Construction/DHT22.png)
+![DHT22](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/Construction/5inch.png)
 
 **Semi-Transparent PlexiGlass**
 
@@ -176,4 +176,4 @@ use https://github.com/khinds10/DeviceHub to setup a custom datahub for your dev
 
 # Finished!
 
-![Finished](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/Construction/7.png)
+![Finished](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/Construction/XXX.png)
