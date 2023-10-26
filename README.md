@@ -1,5 +1,5 @@
 # Table Top Web Panel
-Create a table top web panel with a rapsberry pi 0
+Create a table top web panel (headless browser with automatic refresh) with a rapsberry pi 0
 
 ![Finished](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/construction/XXX.png)
 
@@ -96,7 +96,9 @@ Add the following lines to have your raspberrypi automatically connect to your h
 >
 >$ `sudo apt-get upgrade`
 >
->$ `sudo apt-get install vim git i2c-tools build-essential python-dev rpi.gpio python3 python3-pip python-setuptools python3-requests`
+>$ `sudo apt-get install vim git i2c-tools build-essential python-dev rpi.gpio python3 python3-pip python-setuptools python3-requests python3-dev`
+>
+>$ `sudo apt install --no-install-recommends xserver-xorg-video-all   xserver-xorg-input-all xserver-xorg-core xinit x11-xserver-utils`
 
 **Install DHT22 Python Library**
 
@@ -124,7 +126,7 @@ Add the following lines to have your raspberrypi automatically connect to your h
 
 **Fix VIM default syntax highlighting [optional]**
 
->`sudo vi  /etc/vim/vimrc`
+>`sudo vi /etc/vim/vimrc`
 >
 >uncomment the following line:
 >
@@ -168,6 +170,51 @@ Connect the 5 inch monitor as you would a normal monitor through the HDMI port o
 
 ### Software Setup
 
+**Create a .xinitrc file in your rapsberry pi home directory**
+
+$ vi .xinitrc 
+
+> \#!/usr/bin/env sh
+
+> xset -dpms
+
+> xset s off
+
+> xset s noblank
+
+> unclutter & matchbox-window-manager & midori -e Fullscreen https://WEBSITE URL HERE
+
+**Edit the .bash_profile to startx when you login**
+
+$ vi .bash_profile
+
+> if [ -z $DISPLAY ] && [ $(tty) = /dev/tty1 ]
+
+> then
+
+>  startx
+
+> fi
+
+**vi ~/.config/midori/config**
+
+> [settings]
+
+> last-window-width=710
+
+> last-window-height=530
+
+> show-navigationbar=false
+
+Create a copy of **settings-shadow.py** to **settings.py** and update your own values for your clock.
+
+Get Outside weather
+`weatherAPIURL = 'https:// openweather API'`
+
+`https://openweathermap.org/`
+
+account is required, the device will simply read from the default forecast returned from the API, it will also post it to the Datahub.
+
 **OPTIONAL DATAHUB**
 
 use https://github.com/khinds10/DeviceHub to setup a custom datahub for your device to post temps as time goes on.
@@ -180,7 +227,21 @@ use https://github.com/khinds10/DeviceHub to setup a custom datahub for your dev
 
 ### Set pi user crontab 
 
+Setup the crontab to: 
+
+1) wait 5 minutes then move the mouse to the corner so it's no longer visible
+
+2) check temp each 7 minutes
+
+3) press the F5 (browser refresh) key each 15 minutes - this will ensure that if the website crashes or doesn't load, it will refresh again periodically
+
 `$ crontab -e`
+
+> @reboot sleep 300s; export DISPLAY=:0; xdotool mousemove 500 500 click 1; xdotool mousemove 0 0;
+
+> \*/7 * * * * python3 /home/khinds/temp-check.py
+
+> \*/15 * * * * xte -x :0 "key F5"
 
 # Finished!
 
