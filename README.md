@@ -146,7 +146,7 @@ Add the following lines to have your raspberrypi automatically connect to your h
 
 **5 Inch Touchscreen for Raspberry Pi**
 
-![DHT22](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/Construction/5inch.png)
+![5Inch](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/Construction/5Inch.png)
 
 **Semi-Transparent PlexiGlass**
 
@@ -155,6 +155,12 @@ Add the following lines to have your raspberrypi automatically connect to your h
 # Building the TableTopWebPanel
 
 ### Wiring the Components
+
+Connect the DHT22 as follows in the diagram
+
+![5Inch](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/Construction/wiring.png)
+
+Connect the 5 inch monitor as you would a normal monitor through the HDMI port on the raspberrypi.
 
 ### Assembly
 
