@@ -1,7 +1,7 @@
 # Table Top Web Panel
 Create a table top web panel with a rapsberry pi 0
 
-![Finished](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/Construction/XXX.png)
+![Finished](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/construction/XXX.png)
 
 #### Flashing RaspberriPi Hard Disk / Install Required Software (Using Ubuntu Linux)
 
@@ -134,23 +134,23 @@ Add the following lines to have your raspberrypi automatically connect to your h
 
 **RaspberryPi Zero**
 
-![RaspberryPi Zero](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/Construction/PiZero.jpg)
+![RaspberryPi Zero](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/construction/PiZero.jpg)
 
 **USB WIFI (if not a PiZero W)**
 
-![USB WIFI (if not a PiZero W)](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/Construction/wifi.jpg)
+![USB WIFI (if not a PiZero W)](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/construction/wifi.jpg)
 
 **DHT22**
 
-![DHT22](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/Construction/DHT22.png)
+![DHT22](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/construction/DHT22.png)
 
 **5 Inch Touchscreen for Raspberry Pi**
 
-![5Inch](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/Construction/5Inch.png)
+![5Inch](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/construction/5Inch.png)
 
 **Semi-Transparent PlexiGlass**
 
-![Semi-Transparent PlexiGlass](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/Construction/glass.png)
+![Semi-Transparent PlexiGlass](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/construction/glass.png)
 
 # Building the TableTopWebPanel
 
@@ -158,11 +158,11 @@ Add the following lines to have your raspberrypi automatically connect to your h
 
 Connect the DHT22 as follows in the diagram
 
-![wiring](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/Construction/wiring.png)
+![wiring](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/construction/wiring.png)
 
 Connect the 5 inch monitor as you would a normal monitor through the HDMI port on the raspberrypi.
 
-![HDMI](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/Construction/1.jpg)
+![HDMI](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/construction/1.jpg)
 
 ### Assembly
 
@@ -184,4 +184,4 @@ use https://github.com/khinds10/DeviceHub to setup a custom datahub for your dev
 
 # Finished!
 
-![Finished](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/Construction/XXX.png)
+![Finished](https://raw.githubusercontent.com/khinds10/TableTopWebPanel/main/construction/XXX.png)
